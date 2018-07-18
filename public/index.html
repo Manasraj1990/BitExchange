@@ -6,10 +6,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
    <style>
+   
+
 		body {
             padding: 25px;
-			background-image: url("http://www.abc.net.au/news/image/5127296-3x2-940x627.jpg");
-			background-repeat: no-repeat;
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmDhL0qGLwFw_MbyjM2bg1uaD2ysj4boYXRehd4Fq5kUlLZTih");
+			background-repeat:repeat-y;
             background-size: cover;
 		}
       body {
@@ -17,12 +19,13 @@
       }
       @media (min-width: 1000px) {
         body {
-          padding-top: 60px;
-		  background-size: cover;
+          padding-top: 60px; 
         }
       }
+	 
 
     </style>
+  
   
   </head>
 <body>
@@ -52,8 +55,11 @@
 	</nav>
 		
 			
-<select id="baseCurrency">
-<p>selected base currency</p>
+<div class="container">
+  <div class="jumbotron" style="text-align:center; background-image: url(img/propdev.jpgs); background-color:;">
+    <h1>Select Base Currency </h1>      
+    
+	<select id="baseCurrency">
   <option value="INR">Indian Rupees</option>
   <option value="USD">US Dollars</option>
   <option value="EUR">Euro</option>
@@ -67,9 +73,30 @@
 	<h2 id="usd"></h2>
 	<h2 id="base"></h2>
 </div>
+  </div>
+</div>
+
+			
+<div class="container">
+  <div class="jumbotron" style="text-align:center">
+  <h1></h1>    
+  </div>
+  
+<div class="container">
+  <div class="jumbotron" style="text-align:center">
+    
+  </div>
+  
+<div class="container">
+  <div class="jumbotron" style="text-align:center">
+  </div>
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    <script src="bitcoin.js"></script>
 </body>
 </html>
