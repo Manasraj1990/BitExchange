@@ -22,11 +22,12 @@ var updatedon= document.getElementById("updatedon");
 updatedon.innerHTML=`Updated On ${res.time.updated}`;
 var updatediso= document.getElementById("updatediso");
 updatediso.innerHTML=`Updated ISO ${res.time.updatedISO}`;
+var datecontainer=document.getElementById("date");
+
+
 var usd= document.getElementById("usd");
-usd.innerHTML=`USD ${res.bpi.USD.rate}`;
+usd.innerHTML=`USD  <br />  ${res.bpi.USD.rate}`;
 var base= document.getElementById("base");
 var basecurrency= document.getElementById("baseCurrency").value;
-base.innerHTML=`${basecurrency} ${res["bpi"][`${basecurrency}`]["rate"]}`;
+base.innerHTML=`${basecurrency} <br />  ${res["bpi"][`${basecurrency}`]["rate"]}`;
 }
-
-//end of bitcoin.js

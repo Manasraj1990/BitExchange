@@ -1,0 +1,17 @@
+body {
+    padding: 25px;
+    position: relative;
+    height:100vh;
+		/*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmDhL0qGLwFw_MbyjM2bg1uaD2ysj4boYXRehd4Fq5kUlLZTih");*/
+		background-image: url('bitcoin.jpg');
+    background-size: cover;
+    background-position: top;
+}
+   select{
+    font-size: 1.5rem;
+    height:35px;
+    padding: 5px;
+   }
+b{
+	color: gold;
+}
