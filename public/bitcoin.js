@@ -1,4 +1,5 @@
 var ser = "";
+var likes = 1;
 
 function loadcurrencies(){
 let basecurrency= document.getElementById("baseCurrency").value;
@@ -31,3 +32,10 @@ var base= document.getElementById("base");
 var basecurrency= document.getElementById("baseCurrency").value;
 base.innerHTML=`${basecurrency} <br />  ${res["bpi"][`${basecurrency}`]["rate"]}`;
 }
+  
+  function like(){
+        document.getElementById("show").innerHTML=likes;
+		likes=likes+1;
+		
+  }  
+ 
