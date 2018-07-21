@@ -1,6 +1,9 @@
 var ser = "";
 var likes = 1;
 
+function thanku(){
+	alert("Thanku for being here. For continue click OK")
+}
 function loadcurrencies(){
 let basecurrency= document.getElementById("baseCurrency").value;
 console.log(basecurrency);
@@ -34,6 +37,12 @@ base.innerHTML=`${basecurrency} <br />  ${res["bpi"][`${basecurrency}`]["rate"]}
 }
   
   function like(){
+	  if (localStorage.like){
+		  localStorage.like=Number(localStorage.like)+1;
+	  }
+	  else{
+		  localStorage.like=0;
+	  }
         document.getElementById("show").innerHTML=likes;
 		likes=likes+1;
 		
